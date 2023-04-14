@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-header{
+    text-align: center;
+}
+.modal-body{
+    text-align: center;
+    padding: 10px;
+    
+}
+.modal-body img{
+    overflow: hidden;
+}
+body{
+    background-color: red;
+}
+
