@@ -1,5 +1,4 @@
 import { OBJEKTUMLISTA } from "./jfugveny.js";
-let ertek = 0;
 $(function () {
   const tartalom = osszealit(OBJEKTUMLISTA);
   $("article").append(tartalom);
@@ -10,8 +9,8 @@ $(function () {
 function osszealit(OBJEKTUMLISTA) {
   let txt = `<table class="table text-white"><thead><th>Name</th><th>Type</th><th>Price</th><th>Image</th><th></th></thead><tbody>`;
   for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
-    txt += `<tr id="${ertek}"><td>${OBJEKTUMLISTA[ertek].nev}</td><td>${OBJEKTUMLISTA[ertek].fajta}</td><td>${OBJEKTUMLISTA[ertek].ar}</td><td><img src="${OBJEKTUMLISTA[ertek].kep}" alt="item image" class="img-fluid"></td><td><button class="btn btn-danger delete">Delete</button></td></tr>`;
-    ertek++;
+    txt += `<tr id="${index}"><td>${OBJEKTUMLISTA[index].nev}</td><td>${OBJEKTUMLISTA[index].fajta}</td><td>${OBJEKTUMLISTA[index].ar}</td><td><img src="${OBJEKTUMLISTA[index].kep}" alt="item image" class="img-fluid"></td><td><button class="btn btn-danger delete">Delete</button></td></tr>`;
+    
     }
   txt += "</tbody></table>";
   
