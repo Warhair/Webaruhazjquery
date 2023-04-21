@@ -10,9 +10,9 @@ export const OBJEKTUMLISTA=[
 
 
 
-function RendezesKorSzerint(lista){
+function RendezesArSzerint(lista){
     lista.sort(function(a,b){
-        return a.kor-b.kor;
+        return a.ar-b.ar;
     })
 }
 function RendezesNevSzerint(lista,kulcs) {
@@ -26,7 +26,7 @@ function RendezesNevSzerint(lista,kulcs) {
 }
   export  function Rendezes(lista,kulcs){
             if (typeof lista[0][kulcs]==="number"){
-                RendezesKorSzerint(lista,kulcs)
+                RendezesArSzerint(lista,kulcs)
             }
             else {
                 RendezesNevSzerint(lista,kulcs)
