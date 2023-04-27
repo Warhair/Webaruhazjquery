@@ -25,7 +25,7 @@ function RendezesNevSzerint(lista,kulcs) {
 }
   export  function Rendezes(lista,kulcs){
             if (typeof lista[0][kulcs]==="number"){
-                RendezesKorSzerint(lista,kulcs)
+                RendezesArSzerint(lista,kulcs)
             }
             else {
                 RendezesNevSzerint(lista,kulcs)
