@@ -3,7 +3,7 @@ $(function () {
   const tartalom = osszealit(OBJEKTUMLISTA);
   $("article").append(tartalom);
   $("table").on("click", ".delete", delete_user);
-  console.log(ertek)
+  
 });
 
 function osszealit(OBJEKTUMLISTA) {
@@ -13,8 +13,9 @@ function osszealit(OBJEKTUMLISTA) {
     
     }
   txt += "</tbody></table>";
-  
+  console.log(txt);
   return txt;
+  
 }
 
 function delete_user(event) {
@@ -25,6 +26,5 @@ function delete_user(event) {
   const index = $(event.target).closest("tr").attr("id");
   OBJEKTUMLISTA.splice(index, 1);
   $(event.target).closest("tr").remove();
-  ertek--;
-  console.log(ertek)
+
 }

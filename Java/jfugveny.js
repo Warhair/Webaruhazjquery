@@ -4,15 +4,14 @@ export const OBJEKTUMLISTA=[
     {nev:"RISEN", fajta: "processor", ar: 10000, kep: "Kepek/rog.jfif"},
     {nev: "ASUS", fajta: "videokartya", ar: 19500, kep: "Kepek/asus.jpg"},
     {nev: "NVDIA", fajta: "videokartya", ar: 20000, kep: "Kepek/nvidia.jpg"},
-    
 ]
 
 
 
 
-function RendezesKorSzerint(lista){
+function RendezesArSzerint(lista){
     lista.sort(function(a,b){
-        return a.kor-b.kor;
+        return a.ar-b.ar;
     })
 }
 function RendezesNevSzerint(lista,kulcs) {
